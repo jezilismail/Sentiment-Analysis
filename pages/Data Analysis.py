@@ -25,7 +25,7 @@ st.markdown("""
             """)
 
 st.markdown('## Data Preview')
-df = pd.read_csv('assets\\emotion_data.csv')
+df = pd.read_csv('assets/emotion_data.csv')
 df.drop(['Unnamed: 0'], axis=1, inplace=True)
 df.dropna(inplace=True)
 df.rename(columns={'statement': 'text', 'status': 'label'}, inplace=True)

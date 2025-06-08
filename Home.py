@@ -5,7 +5,7 @@ import re
 import pandas as pd
 
 
-performance_report = pd.read_csv('assets\classification_report.csv')
+performance_report = pd.read_csv('assets/classification_report.csv')
 def preprocess(text):
     text = text.lower()
     text = re.sub(r'[^\w\s]', '', text)
