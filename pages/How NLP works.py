@@ -21,7 +21,7 @@ def clean_text(text):
   return text
 
 def remove_stopwords(text):
-  sw = pickle.load(open('assets\stopwords.sav', 'rb'))
+  sw = pickle.load(open('assets/stopwords.sav', 'rb'))
   text = text.split()
   text = [txt for txt in text if txt not in sw]
   text = ' '.join(text)
